@@ -7,8 +7,8 @@
 <h1>Index</h1>
 
 
-<p>
-    <a asp-action="Create">Create New</a>
+<p >
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
    
 </p>
 <p class="text-danger">@TempData["CreateError"]</p>
@@ -52,10 +52,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Team)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.PlayerId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.PlayerId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.PlayerId">Delete</a>
+                <td >
+                    <a asp-action="Edit" asp-route-id="@item.PlayerId" class=" btn btn-warning">Edit</a> 
+                    <a asp-action="Details" asp-route-id="@item.PlayerId" class="btn btn-info">Details</a> 
+                    <a asp-action="Delete" asp-route-id="@item.PlayerId" class=" btn btn-danger">Delete</a>
             </td>
         </tr>
 }

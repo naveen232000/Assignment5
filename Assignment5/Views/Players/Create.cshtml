@@ -42,7 +42,7 @@
                 <input asp-for="Team" class="form-control" />
                 <span asp-validation-for="Team" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mt-2">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
@@ -50,7 +50,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-secondary mt-2">Back to List</a>
 </div>
 
 @section Scripts {
